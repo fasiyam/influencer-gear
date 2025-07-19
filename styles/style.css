@@ -137,6 +137,17 @@ body {
 }
 
 
+/* Company sponsors logo */
+
+.company-logo {
+    flex-wrap: wrap;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 100px 0;
+}
+
+
 
 /* Responsive design */
 
@@ -186,6 +197,12 @@ body {
     }
     .btn-arrow {
         margin: 0 auto;
+    }
+
+    /* company logo section */
+    .company-logo {
+        gap: 32px;
+        margin: 48px 16px;
     }
 }
 
@@ -237,6 +254,12 @@ body {
         margin: 0 auto;
     }
 
+    /* company logo section */
+    .company-logo {
+        margin: 32px 16px;
+        gap: 24px;
+    }
+
 }
 
 /* large device 768px to 992px */
@@ -282,6 +305,13 @@ body {
     }
     .btn-arrow {
         margin: 0 auto;
+    }
+
+    /* company logo section */
+
+    .company-logo {
+        gap: 24px;
+        margin: 64px 16px;
     }
 }
 
