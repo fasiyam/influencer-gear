@@ -54,6 +54,7 @@ body {
     border-radius: 42px;
     font-weight: bold;
     color: #FFF;
+    border: none;
 
 }
 
@@ -99,6 +100,43 @@ body {
 }
 
 
+/* Banner design */
+
+.banner {
+    gap: 130px;
+    align-items: center;
+    justify-content: center;
+    margin: 130px 165px 100px 120px;
+}
+
+.banner-title {
+    font-size: 3.25rem;
+    line-height: 1.35;
+    font-weight: bold;
+    color: #3a3a33;
+    margin-bottom: 10px;
+}
+
+.banner-desc {
+    font-weight: 600;
+    color: #3a3a33;
+    margin-bottom: 16px;
+}
+
+.btn-arrow  {
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.banner-image {
+    background-image: url("/images/Circledesign.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+}
+
+
 
 /* Responsive design */
 
@@ -122,6 +160,32 @@ body {
 
     .nav-links li a {
         font-size: 0.875rem;
+    }
+
+    /* Banner section design */
+
+    .banner {
+        flex-direction: column-reverse;
+        margin: 18px;
+        gap: 14px;
+        text-align: center;
+    }
+    .banner-title {
+        font-size: 1.75rem;
+    }
+    .banner-desc {
+        font-size: 0.875rem;
+        margin-bottom: 20px;
+    }
+    .banner-image {
+        max-width: 260px;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+    .btn-arrow {
+        margin: 0 auto;
     }
 }
 
@@ -147,6 +211,32 @@ body {
         font-size: 0.875rem;
     }
 
+    /* Banner section design */
+
+    .banner {
+        flex-direction: column-reverse;
+        margin: 18px;
+        gap: 14px;
+        text-align: center;
+    }
+    .banner-title {
+        font-size: 1.75rem;
+    }
+    .banner-desc {
+        font-size: 0.875rem;
+        margin-bottom: 20px;
+    }
+    .banner-image {
+        max-width: 260px;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+    .btn-arrow {
+        margin: 0 auto;
+    }
+
 }
 
 /* large device 768px to 992px */
@@ -167,12 +257,45 @@ body {
     .nav-links li a {
         font-size: 0.875rem;
     }
+
+    /* Banner section design */
+
+    .banner {
+        flex-direction: column-reverse;
+        margin: 18px;
+        gap: 14px;
+        text-align: center;
+    }
+    .banner-title {
+        font-size: 1.75rem;
+    }
+    .banner-desc {
+        font-size: 0.875rem;
+        margin-bottom: 20px;
+    }
+    .banner-image {
+        max-width: 260px;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+    .btn-arrow {
+        margin: 0 auto;
+    }
 }
 
 /* larger device 992px 1024px */
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
-    .nav-bar {
+    .nav-bar,
+    .banner {
         margin: 32px 16px;
     }
+
+    .banner-title {
+        font-size: 2.75rem;
+    }
+
+
 }
