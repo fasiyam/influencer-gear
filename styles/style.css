@@ -364,6 +364,20 @@ body {
         max-width: calc(260px - 16px);
         width: 100%;
     }
+
+    /* festured section */
+
+    .everything-in-one-place {
+        flex-direction: column-reverse;
+        margin: 48px 16px 48px 16px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .products-image img {
+        padding: 0 16px;
+        width: 100%;
+    }
     
 
 }
@@ -426,6 +440,18 @@ body {
     .products {
         margin: 32px 32px;
     }
+
+
+    /* festured section */
+
+    .everything-in-one-place {
+        flex-direction: column-reverse;
+        margin: 48px 32px 48px 32px;
+        justify-content: center;
+        text-align: center;
+        
+    }
+
 }
 
 /* larger device 992px 1024px */
@@ -451,6 +477,14 @@ body {
 
     .products {
         margin: 48px;
+    }
+
+
+    /* featured section */
+
+    .everything-in-one-place {
+        flex-direction: column;
+        text-align: center;
     }
 
 
