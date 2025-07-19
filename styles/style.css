@@ -54,6 +54,125 @@ body {
     border-radius: 42px;
     font-weight: bold;
     color: #FFF;
-    
+
 }
 
+.display-flex {
+    display: flex;
+}
+
+.display-grid {
+    display: grid;
+}
+
+
+/* Navbar design */
+
+.nav-bar {
+    align-items: center;
+    grid-template-columns: 0.9fr 1.1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 120px;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3a3a33;
+}
+
+.nav-links {
+    gap: 24px;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-item  a {
+    text-decoration: none;
+    color: #3a3a33;
+}
+
+
+
+/* Responsive design */
+
+/* Smaller device less than 576px */
+
+@media screen and (max-width: 576px) {
+    .nav-bar {
+        text-align: center;
+        margin: 8px;
+    }
+
+    .nav-bar, 
+    .nav-links {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .brand-name {
+        font-size: 1.25rem;
+    }
+
+    .nav-links li a {
+        font-size: 0.875rem;
+    }
+}
+
+
+/* Medium device 576px to 768px */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .nav-bar {
+        text-align: center;
+    }
+    
+    .nav-bar, 
+    .nav-links {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .brand-name {
+        font-size: 1.25rem;
+    }
+
+    .nav-links li a {
+        font-size: 0.875rem;
+    }
+
+}
+
+/* large device 768px to 992px */
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    .nav-bar {
+        margin: 16px 16px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .brand-name {
+        font-size: 1.25rem;
+    }
+
+    .nav-links li a {
+        font-size: 0.875rem;
+    }
+}
+
+/* larger device 992px 1024px */
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+    .nav-bar {
+        margin: 32px 16px;
+    }
+}
