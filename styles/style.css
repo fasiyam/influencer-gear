@@ -181,6 +181,36 @@ body {
 }
 
 
+/* Featured section */
+
+.everything-in-one-place {
+    gap: 96px;
+    margin: 100px 165px;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-image img {
+    border-radius: 7px;
+}
+
+.section-header {
+    font-size: 2.25rem;
+    font-weight: bold;
+    line-height: 1.57;
+    color: #0A0826;
+    margin-bottom: 16px;
+}
+
+.section-desc {
+    margin-bottom: 16px;
+    font-weight: bold;
+    line-height: 1.75;
+    color: #6C6C6C;
+}
+
+
+
 /* Responsive design */
 
 /* Smaller device less than 576px */
