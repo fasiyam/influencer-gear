@@ -277,6 +277,20 @@ body {
         gap: 16px;
     }
 
+    /* festured section */
+
+    .everything-in-one-place {
+        flex-direction: column-reverse;
+        margin: 48px 16px 48px 16px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .products-image img {
+        padding: 0 16px;
+        width: 100%;
+    }
+
 }
 
 
