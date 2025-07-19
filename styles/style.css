@@ -15,33 +15,47 @@ body {
 
 /* Shared styles */
 
-.card {
+.product {
     border: none;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    background-color: #FFF;
     border-radius: 5px;
     max-width: 330px;
-    box-shadow: 0 0 40 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 16px 14px;
 }
 
-.card-title {
+.product-title {
     font-size: 1.75rem;
+    font-weight: 600;
     line-height: 1.4;
     color: rgba(24, 25, 31, 1);
+    margin-bottom: 6px;
 }
 
-.item-price {
+.product-price {
     font-size: 1.5rem;
     line-height: 1.5;
+    font-weight: 400;
     color: rgba(0, 0, 0, 0.87);
 }
 
-.item-rating {
+
+.product-rating {
     font-size: 0.875rem;
     line-height: 1.5;
     color: rgba(94, 99, 102, 1);
+    display: flex;
+    gap: 8px;
 }
 
-.item-desc {
+.product-rating p {
+    line-height: 1.67;
+}
+
+
+.product-desc {
     font-size: 0.875rem;
     line-height: 1.43;
     letter-spacing: 1.8;
@@ -148,6 +162,24 @@ body {
 }
 
 
+/* Products section */
+
+.products {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 30px;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 2.5;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 
 /* Responsive design */
 
@@ -204,6 +236,17 @@ body {
         gap: 32px;
         margin: 48px 16px;
     }
+
+    /* porducts section */
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 8px;
+        margin-right: 8px;
+        gap: 16px;
+    }
+
 }
 
 
@@ -260,6 +303,25 @@ body {
         gap: 24px;
     }
 
+    /* products section */
+
+    .products {
+        margin: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product {
+        max-width: 260px;
+        width: 100%;
+    }
+
+    .product-image {
+        max-width: calc(260px - 16px);
+        width: 100%;
+    }
+    
+
 }
 
 /* large device 768px to 992px */
@@ -311,20 +373,40 @@ body {
 
     .company-logo {
         gap: 24px;
-        margin: 64px 16px;
+        margin: 32px;
+    }
+
+
+    /* products section */
+
+    .products {
+        margin: 32px 32px;
     }
 }
 
 /* larger device 992px 1024px */
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
-    .nav-bar,
-    .banner {
+    .nav-bar {
         margin: 32px 16px;
     }
-
+    .banner {
+        margin: 48px;
+    }
     .banner-title {
         font-size: 2.75rem;
+    }
+
+    /* company logo */
+    .company-logo {
+        margin: 48px;
+        gap: 24px;
+    }
+
+    /* products section */
+
+    .products {
+        margin: 48px;
     }
 
 
